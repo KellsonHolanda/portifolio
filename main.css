@@ -122,7 +122,7 @@ header .navegacao li a:hover::after{
 }
 main{
     background-color: #111;
-    color:white;
+    color:#fff;
 }
 main .sobre{
     display: grid;
@@ -296,9 +296,10 @@ main .sobre{
     color: #fff;
     font-size: 1.6rem;
     font-weight: 500;
-
 }
-
+.service p{
+    color:#f2f2f2;
+}
 
 
 @keyframes conteudoTexto{
@@ -320,7 +321,43 @@ main .sobre{
 }
 
 .myResume{
+    margin-top: 30px;
+    padding: 60px;
+    background-color: #151515;
     color:#ffff;
+}
+
+.sobreTitulo{
+    text-align: center;;
+    grid-column: 1/-1;
+    margin: 30px 0;
+    color: #fff;
+}
+.sobreTitulo h2{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2.5rem;
+    color: #ff5d56;
+    margin-bottom: 15px;
+
+}
+.sobreTitulo p{
+    color:#707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.sobreTitulo div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.sobreTitulo span{
+    display: block;
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: #dc3545;
+
 }
 
 .informacao{
@@ -481,4 +518,222 @@ main .sobre{
     }
 }
 
+.cursos {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+}
 
+.skills{
+    display: grid;
+}
+
+.skills h2{
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: #ff5d56;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    justify-self: start;
+}
+.skills h2 i {
+    padding-right: 10px;
+}
+.skillContent{
+    font-size: 1.5rem;
+    grid-column: 1/2;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 10px;
+    
+}
+
+.skillContent h3{
+    font-size: 1.5rem;
+}
+
+.skillContent ul{
+    display: flex;
+    justify-content: right;
+}
+
+.funFacts {
+    grid-column: 3/-1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.funFacts h2{
+    grid-column: 1/-1;
+    padding: 10px 30px;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    background-color: #ff5d56;
+    margin-bottom: 30px;
+    justify-self: start;
+}
+
+.funFacts h2 i{
+    padding-right: 10px;
+}
+
+.funFacts ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.funFacts ul li{
+    background-color: #222;
+    border: 3px solid #2f2b2b;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-self: start;
+    width: 200px;
+    height: 100px;
+}
+
+.funFacts ul li i {
+    grid-row: 1/3;
+    margin: auto;
+    padding: 20px;
+    font-size: 2rem;
+    color: #ff5d56;
+    border-right: 2px solid #3e3d3d;
+}
+
+.funFacts ul li span{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.funFacts ul li p {
+    padding-left: 10px;
+    color: #707070;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1089px){
+    .myResume .experienceContent,
+    .educationContent{
+        justify-self: center;
+        grid-column: 1/-1;
+    }
+    .myResume .experience{
+        grid-column: 1/-1;
+        grid-row: 1;
+        justify-self: center;
+        
+    }
+    .myResume .education{
+        grid-column: 1/-1;
+        grid-row: 3;
+        justify-self: center;
+        margin: 30px 0;
+    }
+    .cursos{
+        grid-template-columns: 1fr;
+    }
+    .cursos .funFacts {
+        margin-bottom: 30px;
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        grid-column: 1/-1;
+    }
+    .cursos .funFacts h2{
+        justify-self: center;
+    }
+
+    .cursos .skills {
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        grid-column: 1/-1;
+    }
+    .cursos .skills h2 {
+        justify-self: center;
+    }
+}
+.projects{
+    padding: 30px;
+    display:grid;
+    justify-content: center;
+    gap: 30px;
+    background-color: #151515;
+}
+.projects ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projectsModels ul li{
+    cursor:pointer;
+    background-color: #222;
+    border: 1px solid #333;
+    padding: 6px 20px;
+    color:#707070;
+}
+
+.storedProjects ul {
+    display: grid;
+    margin-top: 60px;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.storedProjects ul li{
+    max-width: 100%;
+    height: 100%;
+}
+.storedProjects ul li img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    cursor:pointer;
+
+}
+.projects a{
+    background-color: #222;
+    text-decoration: none;
+    justify-self: center;
+    padding: 20px 40px;
+    border: 1px solid #333;
+    color: #707070;
+}
+
+.storedProjects ul li {
+    display: none;
+}
+.storedProjects ul li.ativo {
+    display: block;
+    animation: apresentacaoDosProjetos 2s ease-in-out forwards;
+}
+
+.projectsModels ul li.ativo {
+    background-color: #dc3545;
+    color:#151515;
+    font-weight: bold;
+    
+}
+
+@keyframes apresentacaoDosProjetos{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 20px, 0)
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
